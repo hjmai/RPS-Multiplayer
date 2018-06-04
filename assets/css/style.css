@@ -1,0 +1,12 @@
+body{
+    background-color: #d3d3d3;
+}
+.container{
+    background-color: white;
+    height: 100vh;
+}
+.rpsAnswer{
+    border: 1px solid black;
+    padding: 75px;
+    margin-bottom: 10px;
+}

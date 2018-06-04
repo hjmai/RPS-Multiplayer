@@ -6,11 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RPS Multiplayer</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-
+    <div class="container">
+        <div class="row" style="padding-top: 20px;">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
+                <input type="name" class="form-control text-center" id="name" placeholder="Enter name" style="margin-bottom: 10px">
+                <button type="submit" class="btn btn-primary nameSubmit">Submit</button>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center" id="player1">
+                <h1>Player 1</h1>
+                <h3>0-0</h3>
+                <div class="text-center rpsAnswer"></div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">Rock</button>
+                    <button type="button" class="btn btn-secondary">Paper</button>
+                    <button type="button" class="btn btn-secondary">Scissor</button>
+                </div>
+            </div>
+            <div class="col-md-6 text-center" id="player2">
+                <h1>Player 2</h1>
+                <h3>0-0</h3>
+                <div class="text-center rpsAnswer"></div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">Rock</button>
+                    <button type="button" class="btn btn-secondary">Paper</button>
+                    <button type="button" class="btn btn-secondary">Scissor</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="./assets/javascript/firebaseConfig.js"></script>
     <script src="./assets/javascript/game.js"></script>
 </body>
 </html>

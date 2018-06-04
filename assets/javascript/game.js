@@ -1,11 +1,13 @@
-var config = {
-    apiKey: "AIzaSyDgbfadRQGkP-HHK2RGagQ-VAGLmOUtDWM",
-    authDomain: "rps-multiplayer-efcb7.firebaseapp.com",
-    databaseURL: "https://rps-multiplayer-efcb7.firebaseio.com",
-    projectId: "rps-multiplayer-efcb7",
-    storageBucket: "rps-multiplayer-efcb7.appspot.com",
-    messagingSenderId: "528955017218"
-  };
-firebase.initializeApp(config);
+var player1 = null;
+var player2 = null;
+var player1Name = "";
+var palyer2Name = "";
+var yourPlayerName = "";
+var turn = 1;
+
 var database = firebase.database();
 
+$('.nameSubmit').on('click', function(){
+  var name = $('#name').val().trim();
+  $('#player1>h1').text(name);
+})
